@@ -1,0 +1,127 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ .typing::before {
+     content: '';
+	 align-content: center;
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 2px;
+     height: 100%;
+     animation: cursorBlink 0.8s steps(3) infinite
+ }
+
+ @keyframes cursorBlink {
+
+     0%,
+     75% {
+         opacity: 1
+     }
+
+     76%,
+     100% {
+         opacity: 0
+     }
+ }
+
+ .typing {
+     position: absolute;
+	 align-items: center;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(246, 9, 9, 0.781))
+ }
+
+ .typing h2 {
+     position: absolute;
+     color: #1b546e;
+     letter-spacing: 5px;
+     font-size: 4rem;
+	 margin-left: 500px;
+     overflow: hidden;
+     margin-bottom: 0;
+     animation: type 5s steps(11) infinite
+ }
+
+ @keyframes type {
+
+     0%,
+     100% {
+         width: 0px
+     }
+
+     30%,
+     60% {
+         width: 394.09px
+     }
+ }
+
+ @media(max-width: 330px) {
+     .typing h2 {
+         font-size: 3rem;
+         animation: type 5s steps(10) infinite
+     }
+
+     @keyframes type {
+
+         0%,
+         100% {
+             width: 0px
+         }
+
+         30%,
+         60% {
+             width: 305px
+         }
+     }
+ }
+/**/
+.container{
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    transform: translate(45%, -50%);
+	filter: drop-shadow(0 0 0.75rem rgb(24, 13, 13));
+}
+.card{
+	border-radius: 25px;
+}
+
+/* animation for the background of my website Credits: carpe numidium*/
+html {
+    margin: 0px 0px;
+    height:100%;
+    width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 90%,
+		0 50%,
+		0 90%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 35s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+
+/* it ends here what wonderful exp*/
